@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Cloud Health System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Cloud Health System</h1>
+
+<div class="container">
+    <h2>Add Patient Report</h2>
+
+    <input id="name" placeholder="Patient Name">
+    <input id="bp" type="number" placeholder="Blood Pressure (BP)">
+    <input id="sugar" type="number" placeholder="Sugar Level">
+    <textarea id="disease" placeholder="Disease Description"></textarea>
+
+    <label>Upload Report (PDF/Image):</label>
+    <input id="reportFile" type="file">
+
+    <button onclick="saveReport()">Save Report</button>
+</div>
+
+<hr>
+
+<h2>Saved Records</h2>
+<div id="records"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
